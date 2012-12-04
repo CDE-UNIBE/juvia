@@ -8,7 +8,7 @@
       <% end %>
       <% if can?(:read, Comment) %>
         <div class="section <%= maybe_active(:comments) %>">
-          <% counter = Comment.accessible_by(current_ability).requiring_moderation.count %>
+          <% counter = current_user.accessible_comments.requiring_moderation.count %>
           <% if counter == 0 %>
             <%= link_to "Comments", admin_comments_path %>
           <% else %>

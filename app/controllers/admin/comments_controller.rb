@@ -7,8 +7,8 @@ class Admin::CommentsController < ApplicationController
   
   def index
     authorize! :read, Comment
-    @all_comments = Comment.
-      accessible_by(current_ability).
+    @all_comments = current_user.
+      accessible_comments.
       order('created_at DESC').
       includes(:topic)
     @comments = @all_comments.page(params[:page])
