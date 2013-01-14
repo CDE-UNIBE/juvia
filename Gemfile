@@ -14,6 +14,8 @@ gem 'will_paginate', '~> 3.0.pre4'
 gem 'css3buttons'
 gem 'cancan'
 gem 'inherited_resources'
+gem 'execjs'
+gem 'therubyracer', "~> 0.10.2"
 
 # Deploy with Capistrano
 # gem 'capistrano'
@@ -47,5 +49,6 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'mysql2'
+gem 'sqlite3'
+# gem 'mysql2'
 # gem 'pg'
