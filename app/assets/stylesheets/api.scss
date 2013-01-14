@@ -3,8 +3,8 @@
 @import "comment_content";
 
 .juvia-container {
-	font-family: 'Helvetica', 'Arial', 'Sans Serif';
-	font-size: 11pt;
+	//font-family: 'Helvetica', 'Arial', 'Sans Serif';
+	//font-size: 11pt;
 	line-height: normal;
 
 	// Override conflicting styles from some websites.
@@ -133,7 +133,7 @@
 }
 
 .juvia-textarea-field textarea {
-	width: 50em;
+	width: 20em;
 	height: 15em;
 }
 
